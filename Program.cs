@@ -10,6 +10,8 @@ app.MapPost("/", (ArenaUpdate model) =>
     Console.WriteLine(model);
     string[] commands = { "F", "R", "L", "T" };
     var i = Random.Shared.Next(4);
+    
+    // TODO add your implementation here to replace the random response
 
     return commands[i];
 });
